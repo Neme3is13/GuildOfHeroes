@@ -12,4 +12,11 @@ public class DotaHero {
         WinRate = winRate;
         GamesPlayed = 0;
     }
+    public void PlayMatches(int count) {
+        if (count <= 0) {
+            return;
+        }
+
+        GamesPlayed += count;
+    }
 }

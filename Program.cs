@@ -52,3 +52,11 @@ DotaHero earthshaker = new DotaHero("Earthshaker", "Support", 620, 50.8);
 Console.WriteLine($"{invoker.Name} | Роль: {invoker.Role} | HP: {invoker.Health} | WinRate: {invoker.WinRate}% | Игр сыграно: {invoker.GamesPlayed}");
 Console.WriteLine($"{tinker.Name} | Роль: {tinker.Role} | HP: {tinker.Health} | WinRate: {tinker.WinRate}% | Игр сыграно: {tinker.GamesPlayed}");
 Console.WriteLine($"{earthshaker.Name} | Роль: {earthshaker.Role} | HP: {earthshaker.Health} | WinRate: {earthshaker.WinRate}% | Игр сыграно: {earthshaker.GamesPlayed}");
+
+Console.WriteLine($"Игр сыграно до: {invoker.GamesPlayed}");
+
+invoker.PlayMatches(3);
+Console.WriteLine($"Игр сыграно после +3: {invoker.GamesPlayed}");
+
+invoker.PlayMatches(-2);
+Console.WriteLine($"Игр сыграно после -2: {invoker.GamesPlayed}");
